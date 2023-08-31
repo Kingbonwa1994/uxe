@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -10,18 +10,19 @@ const ServiceCard = ({ id, imageUrl, title, description }) => {
       : description;
 
   return (
-    <Link href={`/quote-form?id=${id}&service=${encodeURIComponent(title)}`}>
-    <div className="service-card p-4 border rounded-md relative shadow-2xl bg-gray-500">
-    <motion.img
-      whileHover={{ scale: 1, rotate: 10 }}
-      whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
-
-      src={imageUrl} alt={title} className="w-full bg-gray-400 h-auto max-h-40 mb-2" >
-      </motion.img>
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{truncatedDescription}</p>
+    <Link href={`/quote_form?id=${id}&service=${encodeURIComponent(title)}`}>
+      <div className="group service-card p-4 border-[green-900] rounded-md relative shadow-2xl bg-gradient-to-br from-green-200 via-green-700 to-green-200 transform transition-transform duration-300 ease-out hover:scale-110">
+        <motion.img
+          whileHover={{ scale: 0.7, rotate: 10 }}
+          whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
+          src={imageUrl}
+          alt={title}
+          className="w-full bg-inherit h-auto max-h-40 mb-2"
+        ></motion.img>
+        <h3 className="text-lg font-semibold mb-2 text-purple-950">{title}</h3>
+        <p className="text-black">{truncatedDescription}</p>
       </div>
-      </Link>
+    </Link>
   );
 };
 

@@ -1,40 +1,17 @@
-import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Import social media icons
+import Link from 'next/link';
+import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4 lg:w-full">
-      <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 ">
-        <div className="sm:flex sm:justify-between">
-          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">About</a>
-            </li>
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">Licensing</a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">Contact</a>
-            </li>
-          </ul>
-          <div className="flex space-x-3">
-            <a href="#" className="text-gray-500 hover:text-blue-600">
-              <FaFacebook />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-blue-400">
-              <FaTwitter />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-pink-600">
-              <FaInstagram />
-            </a>
-          </div>
-        </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">1cliQ™</a>. All Rights Reserved.</span>
+    <footer className="flex flex-col items-center justify-center bg-inherit text-white p-6">
+      <div className="flex mb-4">
+        <Link href="#"><img src="./icons/facebook.png" alt="Facebook" className="w-6 h-6 mx-2" /></Link>
+        <Link href="#"><img src="./icons/x.png" alt="Twitter" className="w-6 h-6 mx-2" /></Link>
+        <Link href="#"><img src="./icons/instagram.png" alt="Instagram" className="w-6 h-6 mx-2" /></Link>
+        <Link href="#"><img src="./icons/linkedin.png" alt="LinkedIn" className="w-6 h-6 mx-2" /></Link>
+        <Link href="mailto:brett@wmrecycling.co.za"><img src="./icons/email.png" alt="Email" className="w-6 h-6 mx-2" /></Link>
       </div>
+      <p className="text-sm text-pink-950">© 2023 1cliQ™. All rights reserved.</p>
     </footer>
   );
 };

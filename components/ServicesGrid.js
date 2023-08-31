@@ -1,32 +1,27 @@
-"use client";
-import Link from "next/link";
-import ServiceCard from "./ServiceCard";
-import { useRouter } from "next/navigation";
+'use client';
+import { useRouter, useState } from 'next/navigation';
+import ServiceCard from './ServiceCard';
 
 const ServicesGrid = ({ servicesArray }) => {
   const router = useRouter();
-
-  const handleServiceCardClick = (service) => {
-    router.push({
-      pathname: "/quote_form", // Replace with the actual path to your QuoteForm
-    });
+    const handleServiceCardClick = (service) => {
+    
+      router.push({
+        pathname: '/quote_form',
+        query: { id: service.id, service: service.title, }, // Use "serviceName" instead of "name"
+      });
   };
+
   return (
-    <div className="grid bg-gray-600 grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="grid bg-gradient-to-br from-green-400 via-green-800 to-green-400 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
       {servicesArray.map((service) => (
         <div key={service.id}>
-          <Link
-            href={{
-              pathname: "/quote_form",
-            }}
-          >
-            <ServiceCard
-              imageUrl={service.image}
-              title={service.title}
-              description={service.description}
-              onClick={() => handleServiceCardClick(service)}
-            />
-          </Link>
+          <ServiceCard
+            imageUrl={service.image}
+            title={service.title}
+            description={service.description}
+            onClick={() => handleServiceCardClick(service)}
+          />
         </div>
       ))}
     </div>
