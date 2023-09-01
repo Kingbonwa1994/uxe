@@ -2,8 +2,8 @@ import React from 'react';
 
 const LoginForm = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-inherit">
-      <form className="bg-white shadow-md rounded px-8 py-8 mb-4 w-64 flex flex-col items-center">
+    <div className="flex flex-col items-center justify-center h-screen bg-green-700">
+      <form className="bg-green-400 shadow-md rounded px-8 py-8 mb-4 w-64 flex flex-col items-center">
         <div className="mb-4 w-full">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
             Email
