@@ -1,9 +1,12 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 const QuoteForm = () => {
+  const params = useParams()
+  console.log(params)
+
   const callNumber = '0637715945';
   const router = useRouter();
   const { id, serviceName } = router.query || {};

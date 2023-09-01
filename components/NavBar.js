@@ -1,8 +1,9 @@
 import React from 'react';
+import SignupButton from './SignUpButton';
 
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-center mb-10">
+    <div className="flex justify-between items-center mb-10">
       <style>
         {`
           @keyframes animatedGradient {
@@ -23,9 +24,10 @@ const NavBar = () => {
           }
         `}
       </style>
-      <p className="text-6xl md:text-7xl lg:text-8xl bg-gradient-animation text-transparent w-30 font-boldx">
-      1cliQ™
+      <p className="text-6xl md:text-7xl lg:text-8xl bg-gradient-animation text-transparent w-30 font-bold">
+        1cliQ™
       </p>
+      <SignupButton/> {/* This will place the button on the far right */}
     </div>
   );
 };
