@@ -53,9 +53,14 @@ const Signup = () => {
   };
 
   return (
-    <div className="container bg-inherit mx-auto p-4">
-      <h1 className="text-2xl  text-center font-bold mb-4">Signup as a Service Provider</h1>
-      <form onSubmit={handleSubmit}>
+    <div className="bg-green-500 my-auto h-screen">
+    <div className="container mx-auto p-4 bg-green-500">
+        <Link href="/" className="absolute top-0 left-0 m-4 font-bold text-black-500 text-lg hover:text-blue-800">
+          &#8592; Home
+        </Link>
+        <div className="lg:w-1/2 bg-green-400 shadow-md rounded px-8 py-8 mb-4 mx-auto">
+      <h1 className="text-2xl text-center font-bold mb-4">Signup As A Service Provider</h1>
+      <form onSubmit={handleSubmit} className=' bg-green-400'>
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 font-bold">
             Name
@@ -109,6 +114,7 @@ const Signup = () => {
                   type="text"
                   name="service"
                   value={service}
+                  required
                   onChange={(e) => handleServiceChange(e, index)}
                   className="border rounded w-full py-2 px-3"
                   placeholder="Service"
@@ -144,13 +150,14 @@ const Signup = () => {
         </button>
         </div>
       </form>
+      </div>
       <p className="mt-4 text-center">
         Already have an account?{' '}
-        <Link href="/login" className="text-blue-500">Log in
+        <Link href="/login" className="text-white font-extrabold">Log in
         </Link>
       </p>
       </div>
-    
+      </div>
   );
 };
 

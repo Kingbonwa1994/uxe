@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="flex relative flex-col sm:w-full md:w-96 p-14 shadow-md lg:w-full animate-gradient">
+    <main className="flex relative flex-col sm:w-full md:w-96 p-14 shadow-md lg:w-full animate-gradient bg-inherit">
       <style>
         {`
           @keyframes gradientAnimation {
