@@ -17,7 +17,7 @@ const ServicesManagement = () => {
   useEffect(() => {
     // Replace with actual API call to get service data from MongoDB
     setServices(mockServices);
-  }, []);
+  }, );
 
   // Handle service creation
   const handleCreateService = () => {

@@ -26,7 +26,7 @@ const ReportsAndAnalytics = () => {
   useEffect(() => {
     // Replace with actual API call to get report data from MongoDB
     setReports(mockReports);
-  }, []);
+  },);
 
   // Handle selecting a report
   const handleSelectReport = (report) => {

@@ -26,7 +26,7 @@ const Notifications = () => {
   useEffect(() => {
     // Replace with actual API call to get notification data from MongoDB
     setNotifications(mockNotifications);
-  }, []);
+  }, );
 
   // Handle selecting a notification
   const handleSelectNotification = (notification) => {

@@ -18,7 +18,7 @@ const UserManagement = () => {
   useEffect(() => {
     // Replace with actual API call to get user data from MongoDB
     setUsers(mockUsers);
-  }, []);
+  }, );
 
   // Handle user search
   useEffect(() => {

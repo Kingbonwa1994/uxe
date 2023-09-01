@@ -24,7 +24,7 @@ const RoleAndPermissionsManagement = () => {
     // Replace with actual API calls to get role and permission data from MongoDB
     setRoles(mockRoles);
     setPermissions(mockPermissions);
-  }, []);
+  }, );
 
   // Handle selecting a role
   const handleSelectRole = (role) => {
