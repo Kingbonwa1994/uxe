@@ -12,6 +12,10 @@ const Footer = () => {
         <Link href="mailto:brett@wmrecycling.co.za"><img src="./icons/email.png" alt="Email" className="w-6 h-6 mx-2" /></Link>
       </div>
       <p className="text-sm text-pink-950">© 2023 1cliQ™. All rights reserved.</p>
+      <div className="mt-4">
+        <Link href="/login" className="bg-inherit text-white font-bold py-2 px-4 rounded">Admin
+        </Link>
+      </div>
     </footer>
   );
 };
