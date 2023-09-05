@@ -1,5 +1,5 @@
 'use client';
-import { useRouter, useState } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import ServiceCard from './ServiceCard';
 
 const ServicesGrid = ({ servicesArray }) => {
@@ -7,7 +7,7 @@ const ServicesGrid = ({ servicesArray }) => {
     const handleServiceCardClick = (service) => {
     
       router.push({
-        pathname: '/quote_form',
+        pathname: '/quote_form?serviceName=',
         query: { id: service.id, service: service.title, }, // Use "serviceName" instead of "name"
       });
   };

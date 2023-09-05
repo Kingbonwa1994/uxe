@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from '@/components/NavBar'; // Import your NavBar component
-import ServicesGrid from '@/components/ServicesGrid'; // Import your ServicesGrid component
-import servicesArray from '@/data/services' // Import your servicesArray data
-import Footer from '@/components/Footer';
+import NavBar from '../components/NavBar'; // Import your NavBar component
+import ServicesGrid from '../components/ServicesGrid'; // Import your ServicesGrid component
+import servicesArray from '../data/services' // Import your servicesArray data
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (

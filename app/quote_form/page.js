@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import WhatsAppButton from '../../components/WhatsAppButton';
 
 const QuoteForm = () => {
   const params = useParams()

@@ -1,7 +1,7 @@
 "use client"
 // pages/admin/dashboard.js
-import DashboardOverview from '@/components/dashboard/DashboardOverview';
-import HelpAndSupport from '@/components/dashboard/HelpAndSupport';
+import DashboardOverview from '../components/dashboard/DashboardOverview';
+import HelpAndSupport from '../components/dashboard/HelpAndSupport';
 import LogsAndActivity from '@/components/dashboard/Logs';
 import Notifications from '@/components/dashboard/Notifications';
 import ReportsAndAnalytics from '@/components/dashboard/ReportsAndAnalytics';
