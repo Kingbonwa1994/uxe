@@ -12,7 +12,7 @@ const Footer = () => {
           <img src="./icons/x.png" alt="Twitter" className="w-6 h-6 mx-2" />
         </Link>
         <Link href="https://www.instagram.com" target="_blank">
-          <img src="https://www./icons/instagram.png" alt="Instagram" className="w-6 h-6 mx-2" />
+          <img src="./icons/instagram.png" alt="Instagram" className="w-6 h-6 mx-2" />
         </Link>
         <Link href="https://www.linkedin.com" target="_blank">
           <img src="./icons/linkedin.png" alt="LinkedIn" className="w-6 h-6 mx-2" />
